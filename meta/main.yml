@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: docker_focal
   author: Jake Morgan
   description: Docker for Ubuntu 20.04 LTS (Focal Fossa)
   license: MIT
