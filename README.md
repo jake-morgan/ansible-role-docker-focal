@@ -1,6 +1,8 @@
 Docker Focal Fossa
 =========
 
+![master](https://github.com/jake-morgan/ansible-role-docker-focal/workflows/master/badge.svg)
+
 Install Docker CE and Docker Compose on Ubuntu 20.04 LTS (Focal Fossa). Based heavily off of [geerlingguy.docker](https://github.com/geerlingguy/ansible-role-docker).
 
 As 20.04, Ubuntu includes `docker.io` and `docker-compose` in the apt repositories the installation is much simpler than on previous Ubuntu versions.
