@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Jake Morgan
+  description: Docker for Ubuntu 20.04 LTS (Focal Fossa)
+  license: MIT
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+
+  galaxy_tags:
+    - docker
+    - compose
+    - ubuntu
+    - focal
+    - fossa

@@ -1,0 +1,34 @@
+---
+- name: Ensure old versions of Docker are not installed
+  package:
+    name:
+      - docker.io
+      - docker-engine
+      - docker-compose
+    state: absent
+
+- name: Install Docker
+  apt:
+    name: docker.io
+    state: present
+    update-cache: true
+
+- name: Start service
+  service:
+    name: docker
+    state: started
+    enabled: true
+
+- name: Install Docker Compose
+  apt:
+    name: docker-compose
+    state: present
+    update_cache: true
+  when: docker_install_compose | bool
+
+- name: Add users to docker group
+  user:
+    name: "{{ item }}"
+    groups: docker
+    append: true
+  with_items: "{{ docker_users }}"
