@@ -6,6 +6,7 @@
       - docker-engine
       - docker-compose
     state: absent
+  when: uninstall_existing_docker | bool
 
 - name: Install Docker
   apt:

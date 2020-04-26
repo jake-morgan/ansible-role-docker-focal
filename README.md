@@ -17,6 +17,7 @@ Role Variables
 
 | Variable | Description | Type| Required | Default |
 |-|-|-|-|-|
+| `uninstall_existing_docker` | Whether to uninstall existing docker packages | Bool | No | `false` |
 | `docker_install_compose` | Whether to install Docker Compose | Bool | No | `true` |
 | `docker_users` | List of users to add to the `docker` group | List | No | `[]` |
 
@@ -33,6 +34,7 @@ Example Playbook
   roles:
     - role: jake-morgan.docker-focal-fossa
       vars:
+        uninstall_existing_docker: true
         docker_install_compose: true
         docker_users:
           - my_user

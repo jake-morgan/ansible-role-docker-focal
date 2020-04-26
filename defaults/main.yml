@@ -1,3 +1,4 @@
 ---
 docker_install_compose: true
 docker_users: []
+uninstall_existing_docker: false
