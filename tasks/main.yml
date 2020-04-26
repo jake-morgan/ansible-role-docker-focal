@@ -1,5 +1,5 @@
 ---
-- name: Ensure old versions of Docker are not installed
+- name: Remove existing Docker packages
   package:
     name:
       - docker.io
