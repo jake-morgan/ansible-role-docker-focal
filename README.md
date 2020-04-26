@@ -32,7 +32,7 @@ Example Playbook
 ```yaml
 - hosts: all
   roles:
-    - role: jake-morgan.docker-focal-fossa
+    - role: jake-morgan.docker-focal
       vars:
         uninstall_existing_docker: true
         docker_install_compose: true
